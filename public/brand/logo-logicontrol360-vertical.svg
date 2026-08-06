@@ -1,0 +1,11 @@
+<svg width="220" height="240" viewBox="0 0 220 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="240" rx="32" fill="white"/>
+  <circle cx="110" cy="76" r="42" fill="#0B1F3A"/>
+  <path d="M110 35C131.539 35 149 52.4609 149 74C149 95.5391 131.539 113 110 113C88.4609 113 71 95.5391 71 74" stroke="#0891B2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M90 82L103 95L130 61" stroke="#16A34A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 72H140" stroke="#164E78" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M92 57C99 52 121 52 128 57" stroke="#F1F5F9" stroke-width="5" stroke-linecap="round"/>
+  <text x="38" y="156" fill="#0B1F3A" font-size="30" font-family="Arial, sans-serif" font-weight="700">LogiControl</text>
+  <text x="83" y="192" fill="#0891B2" font-size="32" font-family="Arial, sans-serif" font-weight="700">360</text>
+  <text x="41" y="214" fill="#475569" font-size="12" font-family="Arial, sans-serif">Operación, control y trazabilidad</text>
+</svg>

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: logicontrol360
+    runtime: node
+    plan: starter
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    autoDeploy: true
+  - type: web
+    name: logicontrol360-ocr
+    runtime: python
+    plan: starter
+    rootDir: services/revisiones-tecnicas-ocr
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true

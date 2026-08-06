@@ -1,0 +1,10 @@
+<svg width="360" height="88" viewBox="0 0 360 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="88" rx="24" fill="#0B1F3A"/>
+  <circle cx="44" cy="44" r="26" fill="white" fill-opacity="0.08"/>
+  <path d="M44 18C57.2548 18 68 28.7452 68 42C68 55.2548 57.2548 66 44 66C30.7452 66 20 55.2548 20 42" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <path d="M31 48L39 55L56 34" stroke="#16A34A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 41H62" stroke="#89D6E5" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <text x="88" y="39" fill="white" font-size="25" font-family="Arial, sans-serif" font-weight="700">LogiControl</text>
+  <text x="246" y="39" fill="#89D6E5" font-size="25" font-family="Arial, sans-serif" font-weight="700">360</text>
+  <text x="88" y="62" fill="white" fill-opacity="0.72" font-size="12" font-family="Arial, sans-serif">Control operacional multi-terminal</text>
+</svg>
