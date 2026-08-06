@@ -9,13 +9,13 @@ export default async function FuelReceptionPage() {
     <div className="space-y-8">
       <PageHeader
         eyebrow="Combustible"
-        title="Recepción de combustible"
-        description="Preparado para controlar camiones, litros, diferencias y evidencias documentales."
+        title="Recepcion de combustible"
+        description="Concentrara el control de camiones, litros, diferencias y evidencias documentales."
       />
       <RoutePlaceholder
         title="Recepciones"
-        description="Este módulo conectará proveedor, evidencia y conciliación de diferencias."
-        nextStep="Próximo paso: formulario de recepción, respaldo documental y auditoría."
+        description="Este modulo integrara proveedor, evidencia y conciliacion de diferencias."
+        nextStep="Siguiente paso: formulario de recepcion, respaldo documental y auditoria."
       />
     </div>
   );

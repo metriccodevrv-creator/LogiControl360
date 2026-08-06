@@ -58,7 +58,10 @@ export function ReceptionForm() {
           <form className="grid gap-4 md:grid-cols-2" onSubmit={form.handleSubmit(onSubmit)}>
             <div className="md:col-span-2">
               <label className="mb-2 block text-sm font-medium">Envio abierto o bus</label>
-              <Input {...form.register("openShipment")} placeholder="Ej. JXWK-17 / envio 81294" />
+              <Input
+                {...form.register("openShipment")}
+                placeholder="Patente, numero interno o identificador del envio"
+              />
               <ErrorText message={form.formState.errors.openShipment?.message} />
             </div>
 

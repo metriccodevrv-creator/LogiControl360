@@ -10,12 +10,12 @@ export default async function ChecklistsPage() {
       <PageHeader
         eyebrow="Checklists"
         title="Plantillas y resultados de checklist"
-        description="Preparado para controles repetibles por bus, terminal, rol y campaña."
+        description="Concentrara controles repetibles por bus, terminal, rol y campana."
       />
       <RoutePlaceholder
         title="Checklists operativos"
-        description="Quedó reservada la ruta para plantillas, ítems, evidencias y firmas digitales."
-        nextStep="Próximo paso: crear plantillas versionadas y resultados por ejecución."
+        description="Aqui se integraran plantillas, items, evidencias y firmas digitales."
+        nextStep="Siguiente paso: crear plantillas versionadas y resultados por ejecucion."
       />
     </div>
   );

@@ -9,13 +9,13 @@ export default async function ShiftsPage() {
     <div className="space-y-8">
       <PageHeader
         eyebrow="Turnos"
-        title="Gestión de turnos"
-        description="Base inicial para planificación, apertura, seguimiento y cierre de turnos operacionales."
+        title="Gestion de turnos"
+        description="Base inicial para planificacion, apertura, seguimiento y cierre de turnos operacionales."
       />
       <RoutePlaceholder
-        title="Módulo de turnos en preparación"
-        description="La estructura del proyecto, permisos y tablas base ya contemplan borrador, programación, apertura, handover y cierre auditado."
-        nextStep="Siguiente implementación: creación de turnos, duplicación de programación y cierre con transferencia de pendientes."
+        title="Modulo de turnos"
+        description="La estructura del proyecto, permisos y tablas base ya contemplan borrador, programacion, apertura, handover y cierre auditado."
+        nextStep="Siguiente paso: creacion de turnos, duplicacion de programacion y cierre con transferencia de pendientes."
       />
     </div>
   );

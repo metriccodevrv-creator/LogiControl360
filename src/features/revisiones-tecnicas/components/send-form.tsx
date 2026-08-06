@@ -59,7 +59,10 @@ export function SendForm() {
           <form className="grid gap-4 md:grid-cols-2" onSubmit={form.handleSubmit(onSubmit)}>
             <div className="md:col-span-2">
               <label className="mb-2 block text-sm font-medium">Bus / QR / PPU</label>
-              <Input {...form.register("search")} placeholder="Ej. LCHT-82 o 4102" />
+              <Input
+                {...form.register("search")}
+                placeholder="Patente, numero interno o codigo QR"
+              />
               <ErrorText message={form.formState.errors.search?.message} />
             </div>
 

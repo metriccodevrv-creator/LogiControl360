@@ -10,12 +10,12 @@ export default async function TasksPage() {
       <PageHeader
         eyebrow="Tareas"
         title="Control de tareas por turno"
-        description="Eje principal del sistema: asignación, ejecución, evidencia, validación e histórico."
+        description="Eje principal del sistema: asignacion, ejecucion, evidencia, validacion e historico."
       />
       <RoutePlaceholder
         title="Motor de tareas"
-        description="La base visual y de permisos ya está lista para estados operacionales, prioridad, responsable y validación."
-        nextStep="Siguiente implementación: tablero de tareas, filtros por estado y flujo de evidencias privadas en Storage."
+        description="La base visual y de permisos ya esta lista para estados operacionales, prioridad, responsable y validacion."
+        nextStep="Siguiente paso: tablero de tareas, filtros por estado y flujo de evidencias privadas en Storage."
       />
     </div>
   );

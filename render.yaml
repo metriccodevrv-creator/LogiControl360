@@ -7,6 +7,35 @@ services:
     startCommand: npm run start
     healthCheckPath: /api/health
     autoDeploy: true
+    envVars:
+      - key: NEXT_PUBLIC_APP_NAME
+        value: LogiControl360
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        value: revisiones-tecnicas
+      - key: SUPABASE_DB_URL
+        sync: false
+      - key: BACKEND_URL
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: APP_TIMEZONE
+        value: America/Santiago
   - type: web
     name: logicontrol360-ocr
     runtime: python
@@ -16,3 +45,32 @@ services:
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     autoDeploy: true
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: SUPABASE_STORAGE_BUCKET
+        value: revisiones-tecnicas
+      - key: OCR_ENGINE
+        value: paddleocr
+      - key: OCR_LANGUAGE
+        value: es
+      - key: OCR_MIN_CONFIDENCE
+        value: "0.75"
+      - key: MAX_FILE_SIZE_MB
+        value: "15"
+      - key: ALLOWED_FILE_TYPES
+        value: application/pdf,image/jpeg,image/png
+      - key: FRONTEND_URL
+        sync: false
+      - key: BACKEND_URL
+        sync: false
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO

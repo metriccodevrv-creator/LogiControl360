@@ -13,7 +13,10 @@ export function RoutePlaceholder({
 }: RoutePlaceholderProps) {
   return (
     <Card>
-      <CardHeader>
+      <CardHeader className="space-y-3">
+        <div className="w-fit rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">
+          Modulo en implementacion
+        </div>
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -24,7 +27,7 @@ export function RoutePlaceholder({
           {nextStep}
         </div>
         <p className="text-sm font-semibold text-[var(--color-operational)]">
-          Ruta base operativa y lista para conectarse al módulo transaccional correspondiente.
+          La ruta ya esta conectada a navegacion y permisos; falta enlazar su flujo operativo.
         </p>
       </CardContent>
     </Card>

@@ -9,13 +9,13 @@ export default async function HistoryPage() {
     <div className="space-y-8">
       <PageHeader
         eyebrow="Historial"
-        title="Histórico y trazabilidad"
-        description="Preparado para navegar actividad por bus, persona, turno, documento o proceso."
+        title="Historico y trazabilidad"
+        description="Concentrara la navegacion por actividad de bus, persona, turno, documento o proceso."
       />
       <RoutePlaceholder
         title="Historial auditable"
-        description="Se enlazará con auditoría transversal, exportaciones y versiones posteriores a cierre."
-        nextStep="Próximo paso: filtros históricos y línea de tiempo por entidad."
+        description="Se integrara con auditoria transversal, exportaciones y versiones posteriores a cierre."
+        nextStep="Siguiente paso: filtros historicos y linea de tiempo por entidad."
       />
     </div>
   );

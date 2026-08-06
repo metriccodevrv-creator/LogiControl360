@@ -10,12 +10,12 @@ export default async function AttendancePage() {
       <PageHeader
         eyebrow="Asistencia"
         title="Registro de asistencia por turno"
-        description="Preparado para controlar presencia, ausencias, reemplazos y respaldos de asistencia escaneada."
+        description="Concentrara presencia, ausencias, reemplazos y respaldos de asistencia escaneada."
       />
       <RoutePlaceholder
         title="Asistencia por turno"
-        description="Quedó reservada la ruta para el cruce entre personal, turno y marcación operacional."
-        nextStep="Siguiente implementación: tabla de presentes, ausentes y reemplazos con evidencia adjunta."
+        description="Aqui se integrara el cruce entre personal, turno y marcacion operacional."
+        nextStep="Siguiente paso: tabla de presentes, ausentes y reemplazos con evidencia adjunta."
       />
     </div>
   );
