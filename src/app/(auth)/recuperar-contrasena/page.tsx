@@ -1,23 +1,19 @@
-import Link from "next/link";
-
-import { ForgotPasswordForm } from "@/components/forms/forgot-password-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ForgotPasswordPage() {
   return (
     <Card className="rounded-[32px]">
       <CardHeader>
-        <CardTitle>Recuperar acceso</CardTitle>
+        <CardTitle>Recuperacion no disponible</CardTitle>
         <p className="text-sm leading-6 text-[var(--color-text-soft)]">
-          Envía el enlace de recuperación usando Supabase Auth y vuelve a ingresar
-          con credenciales seguras.
+          El flujo de recuperacion de acceso tambien quedo oculto mientras el ingreso se
+          mantiene en pausa.
         </p>
       </CardHeader>
-      <CardContent className="space-y-6">
-        <ForgotPasswordForm />
-        <Link href="/login" className="text-sm font-semibold text-[var(--color-operational)]">
-          Volver al inicio de sesión
-        </Link>
+      <CardContent>
+        <div className="rounded-[24px] bg-slate-100 p-5 text-sm leading-6 text-slate-700">
+          No hay acciones disponibles en esta vista por ahora.
+        </div>
       </CardContent>
     </Card>
   );

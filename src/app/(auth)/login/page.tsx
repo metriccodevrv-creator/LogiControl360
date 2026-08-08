@@ -1,28 +1,24 @@
-import Link from "next/link";
-
-import { LoginForm } from "@/components/forms/login-form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function LoginPage() {
   return (
     <Card className="rounded-[32px]">
       <CardHeader>
-        <CardTitle>Ingreso seguro</CardTitle>
+        <CardTitle>Acceso temporalmente pausado</CardTitle>
         <p className="text-sm leading-6 text-[var(--color-text-soft)]">
-          Acceso para supervisores, inspectores, planilleros y administradores.
+          El ingreso a la plataforma se encuentra oculto por el momento mientras se
+          completa la configuracion operativa.
         </p>
       </CardHeader>
-      <CardContent className="space-y-6">
-        <LoginForm />
-        <div className="flex items-center justify-between text-sm text-[var(--color-text-soft)]">
-          <span>Sin registro público habilitado.</span>
-          <Link
-            href="/recuperar-contrasena"
-            className="font-semibold text-[var(--color-operational)]"
-          >
-            Recuperar contraseña
-          </Link>
+      <CardContent className="space-y-4">
+        <div className="rounded-[24px] bg-amber-50 p-5 text-sm leading-6 text-amber-800">
+          El formulario de inicio de sesion y la recuperacion de contrasena quedaron
+          deshabilitados temporalmente.
         </div>
+        <p className="text-sm text-[var(--color-text-soft)]">
+          Cuando el acceso vuelva a habilitarse, esta pantalla mostrara nuevamente el flujo
+          de autenticacion.
+        </p>
       </CardContent>
     </Card>
   );
