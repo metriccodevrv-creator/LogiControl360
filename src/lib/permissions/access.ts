@@ -11,10 +11,6 @@ export function hasPermission(role: AppRole, permission: Permission) {
 export async function requirePermission(permission: Permission) {
   const user = await getCurrentUser();
 
-  if (!user) {
-    redirect("/login");
-  }
-
   if (!hasPermission(user.role, permission)) {
     redirect("/dashboard");
   }

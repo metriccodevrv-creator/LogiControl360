@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { redirect } from "next/navigation";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { getTerminalRows } from "@/features/operations/queries";
@@ -12,10 +11,6 @@ export default async function ApplicationLayout({
 }) {
   const user = await getCurrentUser();
   const terminals = await getTerminalRows();
-
-  if (!user) {
-    redirect("/login");
-  }
 
   return (
     <AppShell

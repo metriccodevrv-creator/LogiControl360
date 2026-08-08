@@ -7,16 +7,12 @@ import { formatDateTime } from "@/lib/dates/format";
 export default async function ProfilePage() {
   const user = await getCurrentUser();
 
-  if (!user) {
-    return null;
-  }
-
   return (
     <div className="space-y-8">
       <PageHeader
         eyebrow="Perfil"
-        title="Sesión y contexto operativo"
-        description="Resumen del usuario autenticado, rol activo y alcance operativo actual."
+        title="Sesion y contexto operativo"
+        description="Resumen del usuario activo, rol visible y alcance operativo actual."
       />
 
       <Card>
@@ -25,7 +21,7 @@ export default async function ProfilePage() {
         </CardHeader>
         <CardContent className="space-y-3 text-sm">
           <p>Correo: {user.email}</p>
-          <p>Último acceso: {formatDateTime(user.lastAccessAt)}</p>
+          <p>Ultimo acceso: {formatDateTime(user.lastAccessAt)}</p>
           <Badge tone="info">Rol: {user.role}</Badge>
         </CardContent>
       </Card>

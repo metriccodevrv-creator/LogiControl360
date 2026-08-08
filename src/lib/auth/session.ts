@@ -3,11 +3,20 @@ import { cache } from "react";
 import { createSupabaseServerClient } from "@/lib/supabase/server";
 import type { AppUser } from "@/types/domain";
 
-export const getCurrentUser = cache(async (): Promise<AppUser | null> => {
+const localOperationalUser: AppUser = {
+  id: "00000000-0000-0000-0000-000000000001",
+  fullName: "Operacion local",
+  email: "modo-local@logicontrol360.local",
+  role: "admin",
+  terminalIds: [],
+  lastAccessAt: new Date("2026-08-08T09:00:00-04:00").toISOString(),
+};
+
+export const getCurrentUser = cache(async (): Promise<AppUser> => {
   const supabase = await createSupabaseServerClient();
 
   if (!supabase) {
-    return null;
+    return localOperationalUser;
   }
 
   const {
@@ -15,7 +24,7 @@ export const getCurrentUser = cache(async (): Promise<AppUser | null> => {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return null;
+    return localOperationalUser;
   }
 
   const role =
